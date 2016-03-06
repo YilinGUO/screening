@@ -1,9 +1,0 @@
-CREATE DATABASE screening;
-USE screening;
-
-CREATE TABLE UserName
-(
-  id INTEGER PRIMARY KEY AUTO_INCREMENT,
-  user_name VARCHAR(40) NOT NULL,
-  pass VARCHAR(40) NOT NULL
-);
