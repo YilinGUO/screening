@@ -17,6 +17,7 @@ CREATE TABLE publication (
   people_id INTEGER,
   pub_name VARCHAR(38),
   pdate DATE,
+  url VARCHAR(38),
   FOREIGN KEY (people_id) REFERENCES people(people_id)
 );
 
@@ -31,12 +32,14 @@ CREATE TABLE website (
 
 CREATE TABLE project_content (
   pcid INTEGER PRIMARY KEY AUTO_INCREMENT,
+  pname VARCHAR(38),
+  purl VARCHAR(38),
+  pdescp VARCHAR(38),
   pcontent VARCHAR(1000)
 );
 
 CREATE TABLE project (
   project_id INTEGER PRIMARY KEY AUTO_INCREMENT,
-  pname VARCHAR(38),
   pcid INTEGER,
   wid INTEGER,
   people_id INTEGER,

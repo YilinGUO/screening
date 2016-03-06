@@ -21,7 +21,7 @@ function SignIn()
         {
             $_SESSION['user_name'] = $row['pass'];
             echo "SUCCESSFULLY LOGIN TO USER PROFILE PAGE...";
-
+            header("Location: view.php");
         }
         else
         {
