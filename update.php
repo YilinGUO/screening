@@ -6,7 +6,7 @@
 
 // creates the edit record form
 // since this form is used multiple times in this file, I have made it a function that is easily reusable
-function renderForm($id, $firstname, $lastname, $error)
+function renderForm($id, $firstname, $middlename, $lastname, $url, $error)
 {
     ?>
     <!DOCTYPE HTML>
@@ -27,8 +27,10 @@ function renderForm($id, $firstname, $lastname, $error)
         <input type="hidden" name="id" value="<?php echo $id; ?>"/>
         <div>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
-            <strong>First Name: *</strong> <input type="text" name="firstname" value="<?php echo $firstname; ?>"/><br/>
-            <strong>Last Name: *</strong> <input type="text" name="lastname" value="<?php echo $lastname; ?>"/><br/>
+            <strong>First Name: *</strong> <input type="text" name="first_name" value="<?php echo $firstname; ?>"/><br/>
+            <strong>Middle Name: </strong> <input type="text" name="middle_name" value="<?php echo $middlename; ?>"/><br/>
+            <strong>Last Name: *</strong> <input type="text" name="last_name" value="<?php echo $lastname; ?>"/><br/>
+            <strong>url: </strong> <input type="text" name="url" value="<?php echo $url; ?>"/><br/>
             <p>* Required</p>
             <input type="submit" name="submit" value="Submit">
         </div>
@@ -51,8 +53,10 @@ if (isset($_POST['submit']))
     {
         // get form data, making sure it is valid
         $id = $_POST['id'];
-        $firstname = mysqli_real_escape_string(htmlspecialchars($_POST['firstname']));
-        $lastname = mysqli_real_escape_string(htmlspecialchars($_POST['lastname']));
+        $firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['first_name']));
+        $middlename = mysqli_real_escape_string($connection, htmlspecialchars($_POST['middle_name']));
+        $lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['last_name']));
+        $url = mysqli_real_escape_string($connection, htmlspecialchars($_POST['url']));
 
         // check that firstname/lastname fields are both filled in
         if ($firstname == '' || $lastname == '')
@@ -61,13 +65,13 @@ if (isset($_POST['submit']))
             $error = 'ERROR: Please fill in all required fields!';
 
             //error, display form
-            renderForm($id, $firstname, $lastname, $error);
+            renderForm($id, $firstname, $middlename, $lastname, $error);
         }
         else
         {
             // save the data to the database
-            mysqli_query("UPDATE players SET firstname='$firstname', lastname='$lastname' WHERE id='$id'")
-            or die(mysqli_error());
+            mysqli_query($connection, "UPDATE people SET first_name='$firstname', middle_name = '$middlename', last_name='$lastname', url='$url' WHERE id='$id'")
+            or die(mysqli_error($connection));
 
             // once saved, redirect back to the view page
             header("Location: view.php");
@@ -88,8 +92,8 @@ else
     {
         // query db
         $id = $_GET['id'];
-        $result = mysqli_query("SELECT * FROM players WHERE id=$id")// TODO
-        or die(mysqli_error());
+        $result = mysqli_query($connection, "SELECT * FROM people WHERE id=$id")// TODO
+        or die(mysqli_error($connection));
         $row = mysqli_fetch_array($result);
 
         // check that the 'id' matches up with a row in the databse
@@ -97,11 +101,13 @@ else
         {
 
             // get data from db
-            $firstname = $row['firstname'];
-            $lastname = $row['lastname'];
+            $firstname = $row['first_name'];
+            $middlename = $row['middle_name'];
+            $lastname = $row['last_name'];
+            $url = $row['url'];
 
             // show form
-            renderForm($id, $firstname, $lastname, '');
+            renderForm($id, $firstname, $middlename, $lastname, $url, '');
         }
         else
             // if no match, display result
