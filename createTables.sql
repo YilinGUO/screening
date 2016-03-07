@@ -5,35 +5,35 @@ CREATE TABLE people (
   first_name VARCHAR(38) NOT NULL,
   middle_name VARCHAR(38),
   last_name VARCHAR(38) NOT NULL,
-  url VARCHAR(38)
+  url VARCHAR(100)
 );
 
 
 CREATE TABLE news (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(38) NOT NULL,
+  title VARCHAR(100) NOT NULL,
   content VARCHAR(1000) NOT NULL
 );
 
 CREATE TABLE website (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
-  url VARCHAR(38) NOT NULL
+  url VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE publication (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
-  pub_name VARCHAR(38) NOT NULL,
+  pub_name VARCHAR(100) NOT NULL,
   pdate DATE,
-  url VARCHAR(38),
+  url VARCHAR(100),
   award VARCHAR(38)
 );
 
 CREATE TABLE project (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
   pname VARCHAR(38),
-  pdescp VARCHAR(38),
-  pcontent VARCHAR(1000),
-  url VARCHAR(38)
+  pdescp VARCHAR(100),
+  pcontent VARCHAR(5000),
+  url VARCHAR(100)
 );
 
 CREATE TABLE people_publish (

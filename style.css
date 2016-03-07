@@ -1,0 +1,112 @@
+h1 {
+    font-family: Georgia;
+    font-size: 20pt;
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia;
+    font-size: 18pt;
+}
+
+h3 {
+    font-family: Georgia;
+    font-size: 14pt;
+}
+
+h4 {
+    font-family: Georgia;
+    font-size: 13pt;
+}
+
+.pub-title {
+    font-family: Georgia;
+    font-weight: bold;
+}
+
+.news-title {
+    font-family: Georgia;
+    color: red;
+    font-weight: bold;
+}
+
+.news-content {
+    font-family: Georgia, Helvetica;
+    font-size: 12pt;
+    line-height: 140%;
+    padding-bottom: 0.5em;
+}
+
+p {
+    font-family: Georgia, Helvetica;
+    font-size: 12pt;
+    line-height: 140%;
+}
+
+.error {
+    font-family: Georgia;
+    text-align: center;
+    color: red;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: saddlebrown;
+}
+
+a:visited {
+    color: green;
+}
+
+ul {
+    display: list-item;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+body {
+    margin: 1in;
+}
+
+fieldset {
+    border: 1px solid;
+    width: 30%;
+    margin:auto;
+    display: block;
+    padding: 1.5em;
+    line-height: 150%;
+    font-family: Arial, SansSerif;
+}
+
+legend {
+    text-align: center;
+}
+
+.login {
+    padding-top: 1em;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin:auto;
+}
+
+table, th, td {
+    padding: 10pt;
+    border: 1px solid black;
+}
+
+button {
+    float: right;
+    font-family: Arial, SansSerif;
+    font-size: 13pt;
+}

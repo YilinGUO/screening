@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>
 <head>
     <title>View Records</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<button type="button" onclick=window.parent.location.href='index.php'>Return</button>
 <!-- ---------------------------- PEOPLE table ------------------------------->
 <?php
 // connect to the database
@@ -11,9 +13,9 @@ $result = mysqli_query($connection, "SELECT * FROM people")
 or die(mysqli_error($connection));
 
 // display data in table
-echo "<p><b>PEOPLE</b></p>";
+echo "<h1><b>PEOPLE</b></h1>";
 
-echo "<table border='1' cellpadding='10'>";
+echo "<table>";
 echo "<tr> <th>ID</th> <th>First Name</th> <th>Middle Name</th> <th>Last Name</th> <th>URL</th><th></th> <th></th></tr>";
 
 // loop through results of database query, displaying them in the table
@@ -42,9 +44,9 @@ $result = mysqli_query($connection, "SELECT * FROM news")
 or die(mysqli_error($connection));
 
 // display data in table
-echo "<p><b>NEWS</b></p>";
+echo "<h1><b>NEWS</b></h1>";
 
-echo "<table border='1' cellpadding='10'>";
+echo "<table>";
 echo "<tr> <th>ID</th> <th>Title</th> <th>Content</th><th></th> <th></th></tr>";
 
 // loop through results of database query, displaying them in the table
@@ -71,9 +73,9 @@ $result = mysqli_query($connection, "SELECT * FROM website")
 or die(mysqli_error($connection));
 
 // display data in table
-echo "<p><b>WEBSITE</b></p>";
+echo "<h1><b>WEBSITE</b></h1>";
 
-echo "<table border='1' cellpadding='10'>";
+echo "<table>";
 echo "<tr> <th>ID</th> <th>URL</th> <th></th> <th></th></tr>";
 
 // loop through results of database query, displaying them in the table
@@ -99,9 +101,9 @@ $result = mysqli_query($connection, "SELECT * FROM project")
 or die(mysqli_error($connection));
 
 // display data in table
-echo "<p><b>PROJECT</b></p>";
+echo "<h1><b>PROJECT</b></h1>";
 
-echo "<table border='1' cellpadding='10'>";
+echo "<table>";
 echo "<tr> <th>ID</th> <th>Name</th> <th>Description</th> <th>Content</th> <th>URL</th><th></th> <th></th></tr>";
 
 // loop through results of database query, displaying them in the table
