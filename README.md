@@ -1,6 +1,11 @@
 # screening task
+This project constructs a dynamic website that will display similar information to
+http://web.eecs.umich.edu/~mozafari/php/projects.php
 
-developed using XAMPP 5.6.8:
+Screen shots of this project could be fould at https://github.com/YilinGUO/screening/tree/part2/screenshots
+
+
+Developed using XAMPP 5.6.8:
 - php 5.6.8
 - mysql 5.6.24 Community edition
 
