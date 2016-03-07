@@ -6,7 +6,7 @@
 
 // creates the new record form
 // since this form is used multiple times in this file, I have made it a function that is easily reusable
-function renderForm($first, $middle, $last, $url, $error)
+function renderForm($title, $content, $error)
 {
     ?>
     <!DOCTYPE HTML>
@@ -25,10 +25,8 @@ function renderForm($first, $middle, $last, $url, $error)
 
     <form action="" method="post">
         <div>
-            <strong>First Name: *</strong> <input type="text" name="first_name" value="<?php echo $first; ?>" /><br/>
-            <strong>Middle Name: </strong> <input type="text" name="middle_name" value="<?php echo $middle; ?>" /><br/>
-            <strong>Last Name: *</strong> <input type="text" name="last_name" value="<?php echo $last; ?>" /><br/>
-            <strong>url: </strong> <input type="text" name="url" value="<?php echo $url; ?>" /><br/>
+            <strong>Title: *</strong> <input type="text" name="title" value="<?php echo $title; ?>" /><br/>
+            <strong>Content: *</strong> <input type="text" name="content" value="<?php echo $content; ?>" /><br/>
             <p>* required</p>
             <input type="submit" name="submit" value="Submit">
         </div>
@@ -48,25 +46,22 @@ include('connect-db.php');
 if (isset($_POST['submit']))
 {
     // get form data, making sure it is valid
-    $firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['first_name']));
-    $middlename = mysqli_real_escape_string($connection, htmlspecialchars($_POST['middle_name']));
-    $lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['last_name']));
-    $url = mysqli_real_escape_string($connection, htmlspecialchars($_POST['url']));
-
+    $title = mysqli_real_escape_string($connection, htmlspecialchars($_POST['title']));
+    $content = mysqli_real_escape_string($connection, htmlspecialchars($_POST['content']));
 
     // check to make sure both fields are entered
-    if ($firstname == '' || $lastname == '')
+    if ($title == '' || $content == '')
     {
         // generate error message
         $error = 'ERROR: Please fill in all required fields!';
 
         // if either field is blank, display the form again
-        renderForm($firstname, $middlename, $lastname, $url, $error);
+        renderForm($title, $content, $error);
     }
     else
     {
         // save the data to the database
-        mysqli_query($connection, "INSERT INTO people(first_name, middle_name, last_name, url) VALUES ('$firstname', '$middlename', '$lastname', '$url')")
+        mysqli_query($connection, "INSERT INTO news(title, content) VALUES ('$title', '$content')")
         or die(mysqli_error($connection));
 
         // once saved, redirect back to the view page
@@ -76,6 +71,6 @@ if (isset($_POST['submit']))
 else
     // if the form hasn't been submitted, display the form
 {
-    renderForm('','','','','');
+    renderForm('','','');
 }
 ?>

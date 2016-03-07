@@ -14,7 +14,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id']))
     $id = $_GET['id'];
 
     // delete the entry
-    $result = mysqli_query($connection, "DELETE FROM people WHERE id=$id")
+    $result = mysqli_query($connection, "DELETE FROM people WHERE id = $id")
     or die(mysqli_error($connection));
 
     // redirect back to the view page

@@ -1,12 +1,5 @@
 <?php
-/*
- EDIT.PHP
- Allows user to edit specific entry in database
-*/
-
-// creates the edit record form
-// since this form is used multiple times in this file, I have made it a function that is easily reusable
-function renderForm($id, $firstname, $middlename, $lastname, $url, $error)
+function renderForm($id, $title, $content, $error)
 {
     ?>
     <!DOCTYPE HTML>
@@ -27,10 +20,8 @@ function renderForm($id, $firstname, $middlename, $lastname, $url, $error)
         <input type="hidden" name="id" value="<?php echo $id; ?>"/>
         <div>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
-            <strong>First Name: *</strong> <input type="text" name="first_name" value="<?php echo $firstname; ?>"/><br/>
-            <strong>Middle Name: </strong> <input type="text" name="middle_name" value="<?php echo $middlename; ?>"/><br/>
-            <strong>Last Name: *</strong> <input type="text" name="last_name" value="<?php echo $lastname; ?>"/><br/>
-            <strong>url: </strong> <input type="text" name="url" value="<?php echo $url; ?>"/><br/>
+            <strong>Title: *</strong> <input type="text" name="title" value="<?php echo $title; ?>"/><br/>
+            <strong>Content: *</strong> <input type="text" name="content" value="<?php echo $content; ?>"/><br/>
             <p>* Required</p>
             <input type="submit" name="submit" value="Submit">
         </div>
@@ -53,24 +44,22 @@ if (isset($_POST['submit']))
     {
         // get form data, making sure it is valid
         $id = $_POST['id'];
-        $firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['first_name']));
-        $middlename = mysqli_real_escape_string($connection, htmlspecialchars($_POST['middle_name']));
-        $lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['last_name']));
-        $url = mysqli_real_escape_string($connection, htmlspecialchars($_POST['url']));
+        $title = mysqli_real_escape_string($connection, htmlspecialchars($_POST['title']));
+        $content = mysqli_real_escape_string($connection, htmlspecialchars($_POST['content']));
 
         // check that firstname/lastname fields are both filled in
-        if ($firstname == '' || $lastname == '')
+        if ($title == '' || $content == '')
         {
             // generate error message
             $error = 'ERROR: Please fill in all required fields!';
 
             //error, display form
-            renderForm($id, $firstname, $middlename, $lastname, $error);
+            renderForm($id, $title, $content, $error);
         }
         else
         {
             // save the data to the database
-            mysqli_query($connection, "UPDATE people SET first_name='$firstname', middle_name = '$middlename', last_name='$lastname', url='$url' WHERE id='$id'")
+            mysqli_query($connection, "UPDATE news SET title='$title', content = '$content' WHERE id='$id'")
             or die(mysqli_error($connection));
 
             // once saved, redirect back to the view page
@@ -92,7 +81,7 @@ else
     {
         // query db
         $id = $_GET['id'];
-        $result = mysqli_query($connection, "SELECT * FROM people WHERE id=$id")// TODO
+        $result = mysqli_query($connection, "SELECT * FROM news WHERE id=$id")// TODO
         or die(mysqli_error($connection));
         $row = mysqli_fetch_array($result);
 
@@ -101,13 +90,11 @@ else
         {
 
             // get data from db
-            $firstname = $row['first_name'];
-            $middlename = $row['middle_name'];
-            $lastname = $row['last_name'];
-            $url = $row['url'];
+            $title = $row['title'];
+            $content = $row['content'];
 
             // show form
-            renderForm($id, $firstname, $middlename, $lastname, $url, '');
+            renderForm($id, $title, $content, '');
         }
         else
             // if no match, display result

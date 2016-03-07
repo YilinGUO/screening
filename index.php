@@ -1,13 +1,17 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Projects</title>
+</head>
+<body>
 <?php
 include('connect-db.php');
 
-$result = $connection->query("SELECT pname, pdescp, purl, first_name, last_name, pcontent FROM project, people,
-  project_content WHERE project.people_id = people.people_id AND project.pcid = project_content.pcid");
+$result = $connection->query("SELECT pname, pdescp, A.url, first_name, middle_name, last_name, pcontent FROM project A, people B, people_project C WHERE C.people_id = B.id AND C.project_id = A.id");
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+        echo $row["pname"] . " " . $row["pdescp"]. " " . $row["url"]. "<br>";
     }
 } else {
     echo "0 results";
@@ -15,3 +19,5 @@ if ($result->num_rows > 0) {
 
 $connection->close();
 ?>
+</body>
+</html>
