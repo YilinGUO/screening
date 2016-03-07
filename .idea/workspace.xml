@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31c612bc-e03b-4e46-8eb8-4a24c3bc326b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_news.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_people.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_project.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_website.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/connect-db.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/createTables.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/createUsers.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dropTables.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insertData.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insertUsers.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/remove_news.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/remove_people.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/remove_project.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/remove_website.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/update_news.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/update_people.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/update_project.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/update_website.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sign-in.php" afterPath="$PROJECT_DIR$/sign-in.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view.php" afterPath="$PROJECT_DIR$/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="screening.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -272,7 +249,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="209" y="195" width="1099" height="745" extended-state="0" />
+    <frame x="209" y="195" width="1099" height="745" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25300092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
