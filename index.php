@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <head>
     <title>Projects</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <button type="button" onclick=window.parent.location.href='sign-in.php'>Login</button>
 <?php
-include('connect-db.php');
+include('php/connect-db.php');
 
 $project = $connection->query("SELECT id, pname, pdescp, url, pcontent FROM project");
 

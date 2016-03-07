@@ -70,7 +70,7 @@ if (isset($_POST['submit']))
         or die(mysqli_error($connection));
 
         // once saved, redirect back to the view page
-        header("Location: view.php");
+        header("Location: ../view.php");
     }
 }
 else

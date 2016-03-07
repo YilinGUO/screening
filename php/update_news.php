@@ -1,5 +1,5 @@
 <?php
-function renderForm($id, $name, $descp, $content, $url, $error)
+function renderForm($id, $title, $content, $error)
 {
     ?>
     <!DOCTYPE HTML>
@@ -20,10 +20,8 @@ function renderForm($id, $name, $descp, $content, $url, $error)
         <input type="hidden" name="id" value="<?php echo $id; ?>"/>
         <div>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
-            <strong>Name: *</strong> <input type="text" name="name" value="<?php echo $name; ?>"/><br/>
-            <strong>Description: </strong> <input type="text" name="descp" value="<?php echo $descp; ?>"/><br/>
+            <strong>Title: *</strong> <input type="text" name="title" value="<?php echo $title; ?>"/><br/>
             <strong>Content: *</strong> <input type="text" name="content" value="<?php echo $content; ?>"/><br/>
-            <strong>URL: </strong> <input type="text" name="url" value="<?php echo $url; ?>"/><br/>
             <p>* Required</p>
             <input type="submit" name="submit" value="Submit">
         </div>
@@ -46,28 +44,26 @@ if (isset($_POST['submit']))
     {
         // get form data, making sure it is valid
         $id = $_POST['id'];
-        $name = mysqli_real_escape_string($connection, htmlspecialchars($_POST['name']));
-        $descp = mysqli_real_escape_string($connection, htmlspecialchars($_POST['descp']));
+        $title = mysqli_real_escape_string($connection, htmlspecialchars($_POST['title']));
         $content = mysqli_real_escape_string($connection, htmlspecialchars($_POST['content']));
-        $url = mysqli_real_escape_string($connection, htmlspecialchars($_POST['url']));
 
-        // check that name/content fields are both filled in
-        if ($name == '' || $content == '')
+        // check that firstname/lastname fields are both filled in
+        if ($title == '' || $content == '')
         {
             // generate error message
             $error = 'ERROR: Please fill in all required fields!';
 
             //error, display form
-            renderForm($id, $name, $descp, $content, $url, $error);
+            renderForm($id, $title, $content, $error);
         }
         else
         {
             // save the data to the database
-            mysqli_query($connection, "UPDATE project SET pname = '$name', pdescp = '$descp', pcontent = '$content', url = '$url' WHERE id ='$id'")
+            mysqli_query($connection, "UPDATE news SET title='$title', content = '$content' WHERE id='$id'")
             or die(mysqli_error($connection));
 
             // once saved, redirect back to the view page
-            header("Location: view.php");
+            header("Location: ../view.php");
         }
     }
     else
@@ -85,22 +81,20 @@ else
     {
         // query db
         $id = $_GET['id'];
-        $result = mysqli_query($connection, "SELECT * FROM project WHERE id = $id")// TODO
+        $result = mysqli_query($connection, "SELECT * FROM news WHERE id=$id")// TODO
         or die(mysqli_error($connection));
         $row = mysqli_fetch_array($result);
 
-        // check that the 'id' matches up with a row in the database
+        // check that the 'id' matches up with a row in the databse
         if($row)
         {
 
             // get data from db
-            $name = $row['pname'];
-            $descp = $row['pdescp'];
-            $content = $row['pcontent'];
-            $url = $row['url'];
+            $title = $row['title'];
+            $content = $row['content'];
 
             // show form
-            renderForm($id, $name, $descp, $content, $url, '');
+            renderForm($id, $title, $content, '');
         }
         else
             // if no match, display result

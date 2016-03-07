@@ -6,7 +6,7 @@
 
 // creates the new record form
 // since this form is used multiple times in this file, I have made it a function that is easily reusable
-function renderForm($url, $error)
+function renderForm($title, $content, $error)
 {
     ?>
     <!DOCTYPE HTML>
@@ -25,7 +25,8 @@ function renderForm($url, $error)
 
     <form action="" method="post">
         <div>
-            <strong>URL: *</strong> <input type="text" name="url" value="<?php echo $url; ?>" /><br/>
+            <strong>Title: *</strong> <input type="text" name="title" value="<?php echo $title; ?>" /><br/>
+            <strong>Content: *</strong> <input type="text" name="content" value="<?php echo $content; ?>" /><br/>
             <p>* required</p>
             <input type="submit" name="submit" value="Submit">
         </div>
@@ -45,30 +46,31 @@ include('connect-db.php');
 if (isset($_POST['submit']))
 {
     // get form data, making sure it is valid
-    $url = mysqli_real_escape_string($connection, htmlspecialchars($_POST['url']));
+    $title = mysqli_real_escape_string($connection, htmlspecialchars($_POST['title']));
+    $content = mysqli_real_escape_string($connection, htmlspecialchars($_POST['content']));
 
     // check to make sure both fields are entered
-    if ($url == '')
+    if ($title == '' || $content == '')
     {
         // generate error message
         $error = 'ERROR: Please fill in all required fields!';
 
         // if either field is blank, display the form again
-        renderForm($url, $error);
+        renderForm($title, $content, $error);
     }
     else
     {
         // save the data to the database
-        mysqli_query($connection, "INSERT INTO website(url) VALUES ('$url')")
+        mysqli_query($connection, "INSERT INTO news(title, content) VALUES ('$title', '$content')")
         or die(mysqli_error($connection));
 
         // once saved, redirect back to the view page
-        header("Location: view.php");
+        header("Location: ../view.php");
     }
 }
 else
     // if the form hasn't been submitted, display the form
 {
-    renderForm('','');
+    renderForm('','','');
 }
 ?>
