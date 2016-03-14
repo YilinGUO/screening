@@ -124,5 +124,46 @@ echo "</table>";
 ?>
 <p><a href="php/add_project.php">Add a PROJECT record</a></p>
 
+<!-- ---------------------------- PROJECT_PUBLISH table ------------------------------->
+<?php
+$files = array("people_publish", "people_project", "project_publish", "project_news", "publish_website");
+$attr = array(
+    array("people_id", "pub_id"),
+    array("people_id", "project_id"),
+    array("project_id", "pub_id"),
+    array("project_id", "news_id"),
+    array("pub_id", "web_id")
+);
+for ($i = 0; $i < count($files); $i++) {
+    // connect to the database
+    include('php/connect-db.php');
+    $result = mysqli_query($connection, "SELECT * FROM $files[$i]")
+    or die(mysqli_error($connection));
+
+// display data in table
+    echo "<h1><b> $files[$i] </b></h1>";
+
+    echo "<table>";
+    echo "<tr> <th>ID</th><th>" . $attr[$i][0] . " </th> <th> " . $attr[$i][1] . "</th><th></th> <th></th></tr>";
+
+// loop through results of database query, displaying them in the table
+    while($row = mysqli_fetch_array( $result )) {
+
+        // echo out the contents of each row into a table
+        echo "<tr>";
+        echo '<td>' . $row['id'] . '</td>';
+        echo '<td>' . $row[$attr[$i][0]] . '</td>';
+        echo '<td>' . $row[$attr[$i][1]] . '</td>';
+        echo '<td><a href="php/update_' . $files[$i] . '.php?id=' . $row['id'] . '">Edit</a></td>';
+        echo '<td><a href="php/remove_' . $files[$i] . '.php?id=' . $row['id'] . '">Delete</a></td>';
+        echo "</tr>";
+    }
+    echo "</table>";
+    echo '<p><a href="php/add_' . $files[$i] . '.php">Add a ' . $files[$i] . ' record</a></p>';
+}
+?>
+
+
+
 </body>
 </html>

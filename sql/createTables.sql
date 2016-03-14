@@ -37,6 +37,7 @@ CREATE TABLE project (
 );
 
 CREATE TABLE people_publish (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
   people_id INTEGER NOT NULL,
   pub_id INTEGER NOT NULL,
   FOREIGN KEY (people_id) REFERENCES people(id),
@@ -44,6 +45,7 @@ CREATE TABLE people_publish (
 );
 
 CREATE TABLE people_project (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
   people_id INTEGER NOT NULL,
   project_id INTEGER NOT NULL,
   FOREIGN KEY (people_id) REFERENCES people(id),
@@ -51,6 +53,7 @@ CREATE TABLE people_project (
 );
 
 CREATE TABLE project_publish (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
   project_id INTEGER NOT NULL,
   pub_id INTEGER NOT NULL,
   FOREIGN KEY (project_id) REFERENCES project(id),
@@ -58,6 +61,7 @@ CREATE TABLE project_publish (
 );
 
 CREATE TABLE project_news (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
   project_id INTEGER NOT NULL,
   news_id INTEGER NOT NULL,
   FOREIGN KEY (project_id) REFERENCES project(id),
@@ -65,6 +69,7 @@ CREATE TABLE project_news (
 );
 
 CREATE TABLE publish_website (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
   pub_id INTEGER NOT NULL,
   web_id INTEGER NOT NULL,
   FOREIGN KEY (pub_id) REFERENCES publication(id),
