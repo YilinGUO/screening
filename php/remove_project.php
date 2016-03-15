@@ -12,11 +12,39 @@ if (isset($_GET['id']) && is_numeric($_GET['id']))
 {
     // get id value
     $id = $_GET['id'];
-
-    // delete the entry
-    $result = mysqli_query($connection, "DELETE FROM project WHERE id = $id")
+    $result = mysqli_query($connection, "SELECT * FROM people_project WHERE project_id = $id")
     or die(mysqli_error($connection));
 
+    if ($result->num_rows) {
+        echo "<script>alert('Please delete dependencies first')</script>";
+        echo "<script type=\"text/javascript\">window.history.go(-1);</script>";
+        exit(1);
+    }
+
+    $result = mysqli_query($connection, "SELECT * FROM project_publish WHERE project_id = $id")
+    or die(mysqli_error($connection));
+
+    if ($result->num_rows) {
+        echo "<script>alert('Please delete dependencies first')</script>";
+        echo "<script type=\"text/javascript\">window.history.go(-1);</script>";
+        exit(1);
+    }
+
+    $result = mysqli_query($connection, "SELECT * FROM project_news WHERE project_id = $id")
+    or die(mysqli_error($connection));
+
+    if ($result->num_rows) {
+        echo "<script>alert('Please delete dependencies first')</script>";
+        echo "<script type=\"text/javascript\">window.history.go(-1);</script>";
+        exit(1);
+    }
+
+
+
+    mysqli_query($connection, "DELETE FROM project WHERE id = $id")
+    or die(mysqli_error($connection));
+
+    //exit;
     // redirect back to the view page
     header("Location: ../view.php");
 }

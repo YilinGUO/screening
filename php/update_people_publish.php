@@ -60,7 +60,6 @@ if (isset($_POST['submit']))
         {
             $result = mysqli_query($connection, "SELECT * FROM people WHERE id=$people_id") or die (mysqli_error($connection));
             $result2 = mysqli_query($connection, "SELECT * FROM publication WHERE id=$pub_id") or die (mysqli_error($connection));
-            $result3 = mysqli_query($connection, "SELECT * FROM people_publish WHERE pub_id=$pub_id AND people_id=$people_id") or die (mysqli_error($connection));
             if (!$result->num_rows) {
                 $error = 'No related person in the database!';
                 renderForm($id, $people_id, $pub_id, $error);
@@ -68,10 +67,6 @@ if (isset($_POST['submit']))
 
             else if (!$result2->num_rows) {
                 $error = 'No related publication in the database!';
-                renderForm($id, $people_id, $pub_id, $error);
-            }
-            else if ($result3->num_rows) {
-                $error = 'Record already exists!';
                 renderForm($id, $people_id, $pub_id, $error);
             }
             else {

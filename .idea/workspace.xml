@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31c612bc-e03b-4e46-8eb8-4a24c3bc326b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/add_people_publish.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/remove_people_publish.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/update_people_publish.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/createTables.sql" afterPath="$PROJECT_DIR$/sql/createTables.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/remove_news.php" afterPath="$PROJECT_DIR$/php/remove_news.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/remove_people.php" afterPath="$PROJECT_DIR$/php/remove_people.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/remove_project.php" afterPath="$PROJECT_DIR$/php/remove_project.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/remove_website.php" afterPath="$PROJECT_DIR$/php/remove_website.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/update_people_publish.php" afterPath="$PROJECT_DIR$/php/update_people_publish.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view.php" afterPath="$PROJECT_DIR$/view.php" />
     </list>
     <ignored path="screening.iws" />
@@ -44,72 +45,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="update_people_publish.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/update_people_publish.php">
+      <file leaf-file-name="remove_news.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/remove_news.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.7818182">
-              <caret line="78" column="130" selection-start-line="78" selection-start-column="130" selection-end-line="78" selection-end-column="130" />
+            <state vertical-scroll-proportion="0.22727273">
+              <caret line="14" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="2" />
               <folding>
-                <marker date="1457997423759" expanded="true" signature="278:323" placeholder="..." />
-                <marker date="1457997423759" expanded="true" signature="1874:1904" placeholder="SELECT * FRO... people" />
-                <marker date="1457997423759" expanded="true" signature="2003:2038" placeholder="SELECT * FRO... publication" />
-                <marker date="1457997423759" expanded="true" signature="2134:2198" placeholder="SELECT * FRO... people_publish" />
-                <marker date="1457997423759" expanded="true" signature="2894:2981" placeholder="UPDATE peopl... " />
-                <marker date="1457997423759" expanded="true" signature="3671:3709" placeholder="SELECT * FRO... people_publish" />
+                <marker date="1458006775516" expanded="true" signature="340:383" placeholder="SELECT * FRO... project_news" />
+                <marker date="1458006775516" expanded="true" signature="348:383" placeholder="DELETE FROM " />
+                <marker date="1458006775516" expanded="true" signature="683:711" placeholder="DELETE FROM " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remove_people_publish.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/remove_people_publish.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-              <folding>
-                <marker date="1457996385071" expanded="true" signature="365:403" placeholder="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update_people.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/update_people.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.236364">
-              <caret line="65" column="167" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="167" />
-              <folding>
-                <marker date="1457973814831" expanded="true" signature="299:344" placeholder="..." />
-                <marker date="1457973814831" expanded="true" signature="2408:2536" placeholder="UPDATE peopl... " />
-                <marker date="1457973814831" expanded="true" signature="3200:3230" placeholder="SELECT * FRO... people" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6830509">
-              <caret line="148" column="52" selection-start-line="148" selection-start-column="52" selection-end-line="148" selection-end-column="52" />
-              <folding>
-                <marker date="1457999636144" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
-                <marker date="1457999636144" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
-                <marker date="1457999636144" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
-                <marker date="1457999636144" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
-                <marker date="1457999636144" expanded="true" signature="4889:4902" placeholder="SELECT * FRO... " />
-                <marker date="1457999636144" expanded="true" signature="4889:4903" placeholder="SELECT * FRO... project_publish" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createTables.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/createTables.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -122,8 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/createUser.sql" />
-        <option value="$PROJECT_DIR$/insertUser.sql" />
         <option value="$PROJECT_DIR$/createUsers.sql" />
         <option value="$PROJECT_DIR$/insertUsers.sql" />
         <option value="$PROJECT_DIR$/conectivity.php" />
@@ -155,10 +98,6 @@
         <option value="$PROJECT_DIR$/php/add_news.php" />
         <option value="$PROJECT_DIR$/php/add_project.php" />
         <option value="$PROJECT_DIR$/php/add_website.php" />
-        <option value="$PROJECT_DIR$/php/remove_news.php" />
-        <option value="$PROJECT_DIR$/php/remove_people.php" />
-        <option value="$PROJECT_DIR$/php/remove_project.php" />
-        <option value="$PROJECT_DIR$/php/remove_website.php" />
         <option value="$PROJECT_DIR$/php/update_people.php" />
         <option value="$PROJECT_DIR$/php/update_project.php" />
         <option value="$PROJECT_DIR$/php/update_website.php" />
@@ -166,9 +105,19 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/php/remove_people_publish.php" />
         <option value="$PROJECT_DIR$/php/add_people_publish.php" />
-        <option value="$PROJECT_DIR$/php/update_people_publish.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/view.php" />
+        <option value="$PROJECT_DIR$/php/add_people_project.php" />
+        <option value="$PROJECT_DIR$/php/add_project_news.php" />
+        <option value="$PROJECT_DIR$/php/updata_people_project.php" />
+        <option value="$PROJECT_DIR$/php/update_people_publish.php" />
+        <option value="$PROJECT_DIR$/php/update_project_news.php" />
+        <option value="$PROJECT_DIR$/php/update_project_publish.php" />
+        <option value="$PROJECT_DIR$/php/update_publish_website.php" />
+        <option value="$PROJECT_DIR$/php/remove_news.php" />
+        <option value="$PROJECT_DIR$/php/remove_people.php" />
+        <option value="$PROJECT_DIR$/php/remove_project.php" />
+        <option value="$PROJECT_DIR$/php/remove_website.php" />
       </list>
     </option>
   </component>
@@ -182,10 +131,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="702" />
+    <option name="y" value="716" />
+    <option name="width" value="1230" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -232,7 +181,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,6 +243,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,11 +296,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="702" y="716" width="1230" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22570017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -360,7 +310,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -382,20 +331,63 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+          <folding>
+            <marker date="1457999801632" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
+            <marker date="1457999801632" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
+            <marker date="1457999801632" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
+            <marker date="1457999801632" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
+            <marker date="1457999801632" expanded="true" signature="4883:4896" placeholder="SELECT * FRO... " />
+            <marker date="1457999801632" expanded="true" signature="4883:4897" placeholder="SELECT * FRO... project_publish" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/add_people_publish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/add_people_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="56" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
+          <folding>
+            <marker date="1458000681532" expanded="true" signature="480:525" placeholder="..." />
+            <marker date="1458000681532" expanded="true" signature="1823:1853" placeholder="SELECT * FRO... people" />
+            <marker date="1458000681532" expanded="true" signature="1948:1979" placeholder="SELECT * FRO... project" />
+            <marker date="1458000681532" expanded="true" signature="2075:2147" placeholder="SELECT * FRO... people_project" />
+            <marker date="1458000681532" expanded="true" signature="2780:2866" placeholder="INSERT INTO people_project... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/add_project_news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="81" selection-start-line="47" selection-start-column="81" selection-end-line="47" selection-end-column="81" />
+          <folding>
+            <marker date="1458002822468" expanded="true" signature="478:523" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1457973814445" expanded="true" signature="287:339" placeholder="SELECT pname... project" />
-            <marker date="1457973814445" expanded="true" signature="773:928" placeholder="SELECT first... people" />
-            <marker date="1457973814445" expanded="true" signature="1685:1803" placeholder="SELECT title... news" />
-            <marker date="1457973814445" expanded="true" signature="2213:2366" placeholder="SELECT pub_n... publication" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -415,11 +407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="87" column="80" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="80" />
-          <folding>
-            <marker date="1457973814831" expanded="true" signature="299:344" placeholder="..." />
-            <marker date="1457973814831" expanded="true" signature="2408:2536" placeholder="UPDATE peopl... " />
-            <marker date="1457973814831" expanded="true" signature="3200:3230" placeholder="SELECT * FRO... people" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -428,12 +415,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="153" column="2" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="2" />
           <folding>
-            <marker date="1457999636144" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
-            <marker date="1457999636144" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
-            <marker date="1457999636144" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
-            <marker date="1457999636144" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
-            <marker date="1457999636144" expanded="true" signature="4889:4902" placeholder="SELECT * FRO... " />
-            <marker date="1457999636144" expanded="true" signature="4889:4903" placeholder="SELECT * FRO... project_publish" />
+            <marker date="1457999801632" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
+            <marker date="1457999801632" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
+            <marker date="1457999801632" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
+            <marker date="1457999801632" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
+            <marker date="1457999801632" expanded="true" signature="4883:4896" placeholder="SELECT * FRO... " />
+            <marker date="1457999801632" expanded="true" signature="4883:4897" placeholder="SELECT * FRO... project_publish" />
           </folding>
         </state>
       </provider>
@@ -442,12 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1457973814445" expanded="true" signature="287:339" placeholder="SELECT pname... project" />
-            <marker date="1457973814445" expanded="true" signature="773:928" placeholder="SELECT first... people" />
-            <marker date="1457973814445" expanded="true" signature="1685:1803" placeholder="SELECT title... news" />
-            <marker date="1457973814445" expanded="true" signature="2213:2366" placeholder="SELECT pub_n... publication" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -468,12 +449,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
-            <marker date="1457999636144" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
-            <marker date="1457999636144" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
-            <marker date="1457999636144" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
-            <marker date="1457999636144" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
-            <marker date="1457999636144" expanded="true" signature="4889:4902" placeholder="SELECT * FRO... " />
-            <marker date="1457999636144" expanded="true" signature="4889:4903" placeholder="SELECT * FRO... project_publish" />
+            <marker date="1457999801632" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
+            <marker date="1457999801632" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
+            <marker date="1457999801632" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
+            <marker date="1457999801632" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
+            <marker date="1457999801632" expanded="true" signature="4883:4896" placeholder="SELECT * FRO... " />
+            <marker date="1457999801632" expanded="true" signature="4883:4897" placeholder="SELECT * FRO... project_publish" />
           </folding>
         </state>
       </provider>
@@ -482,12 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <marker date="1457973814445" expanded="true" signature="287:339" placeholder="SELECT pname... project" />
-            <marker date="1457973814445" expanded="true" signature="773:928" placeholder="SELECT first... people" />
-            <marker date="1457973814445" expanded="true" signature="1685:1803" placeholder="SELECT title... news" />
-            <marker date="1457973814445" expanded="true" signature="2213:2366" placeholder="SELECT pub_n... publication" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -496,12 +471,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1457999636144" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
-            <marker date="1457999636144" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
-            <marker date="1457999636144" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
-            <marker date="1457999636144" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
-            <marker date="1457999636144" expanded="true" signature="4889:4902" placeholder="SELECT * FRO... " />
-            <marker date="1457999636144" expanded="true" signature="4889:4903" placeholder="SELECT * FRO... project_publish" />
+            <marker date="1457999801632" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
+            <marker date="1457999801632" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
+            <marker date="1457999801632" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
+            <marker date="1457999801632" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
+            <marker date="1457999801632" expanded="true" signature="4883:4896" placeholder="SELECT * FRO... " />
+            <marker date="1457999801632" expanded="true" signature="4883:4897" placeholder="SELECT * FRO... project_publish" />
           </folding>
         </state>
       </provider>
@@ -510,12 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <marker date="1457973814445" expanded="true" signature="287:339" placeholder="SELECT pname... project" />
-            <marker date="1457973814445" expanded="true" signature="773:928" placeholder="SELECT first... people" />
-            <marker date="1457973814445" expanded="true" signature="1685:1803" placeholder="SELECT title... news" />
-            <marker date="1457973814445" expanded="true" signature="2213:2366" placeholder="SELECT pub_n... publication" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,12 +500,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding>
-            <marker date="1457999636144" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
-            <marker date="1457999636144" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
-            <marker date="1457999636144" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
-            <marker date="1457999636144" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
-            <marker date="1457999636144" expanded="true" signature="4889:4902" placeholder="SELECT * FRO... " />
-            <marker date="1457999636144" expanded="true" signature="4889:4903" placeholder="SELECT * FRO... project_publish" />
+            <marker date="1457999801632" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
+            <marker date="1457999801632" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
+            <marker date="1457999801632" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
+            <marker date="1457999801632" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
+            <marker date="1457999801632" expanded="true" signature="4883:4896" placeholder="SELECT * FRO... " />
+            <marker date="1457999801632" expanded="true" signature="4883:4897" placeholder="SELECT * FRO... project_publish" />
           </folding>
         </state>
       </provider>
@@ -545,7 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -560,7 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.46153846">
           <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,27 +536,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/remove_news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/remove_project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6923075">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/remove_website.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6923075">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -604,7 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7307692">
           <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,7 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.119170986">
           <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,16 +578,211 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4605598">
           <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/add_people.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9881356">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030035336">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/createTables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/update_people.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7878788">
+          <caret line="65" column="167" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.720339">
+          <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
           <folding>
-            <marker date="1457973814584" expanded="true" signature="486:531" placeholder="..." />
-            <marker date="1457973814584" expanded="true" signature="2207:2303" placeholder="INSERT INTO project... " />
+            <marker date="1457999801632" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
+            <marker date="1457999801632" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
+            <marker date="1457999801632" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
+            <marker date="1457999801632" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
+            <marker date="1457999801632" expanded="true" signature="4883:4896" placeholder="SELECT * FRO... " />
+            <marker date="1457999801632" expanded="true" signature="4883:4897" placeholder="SELECT * FRO... project_publish" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/add_people_publish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46915585">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/add_people_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33728814">
+          <caret line="74" column="56" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
+          <folding>
+            <marker date="1458000681532" expanded="true" signature="480:525" placeholder="..." />
+            <marker date="1458000681532" expanded="true" signature="1823:1853" placeholder="SELECT * FRO... people" />
+            <marker date="1458000681532" expanded="true" signature="1948:1979" placeholder="SELECT * FRO... project" />
+            <marker date="1458000681532" expanded="true" signature="2075:2147" placeholder="SELECT * FRO... people_project" />
+            <marker date="1458000681532" expanded="true" signature="2780:2866" placeholder="INSERT INTO people_project... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/add_project_news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02881356">
+          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+          <folding>
+            <marker date="1458002822468" expanded="true" signature="478:523" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/update_project_news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <marker date="1458005274425" expanded="true" signature="280:325" placeholder="..." />
+            <marker date="1458005274425" expanded="true" signature="1882:1913" placeholder="SELECT * FRO... project" />
+            <marker date="1458005274425" expanded="true" signature="2013:2041" placeholder="SELECT * FRO... news" />
+            <marker date="1458005274425" expanded="true" signature="2562:2654" placeholder="UPDATE proje... " />
+            <marker date="1458005274425" expanded="true" signature="3344:3383" placeholder="SELECT * FRO... project_publish" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/update_publish_website.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <marker date="1458005523811" expanded="true" signature="275:320" placeholder="..." />
+            <marker date="1458005523811" expanded="true" signature="1850:1885" placeholder="SELECT * FRO... publication" />
+            <marker date="1458005523811" expanded="true" signature="1981:2012" placeholder="SELECT * FRO... website" />
+            <marker date="1458005523811" expanded="true" signature="2530:2612" placeholder="UPDATE publi... " />
+            <marker date="1458005523811" expanded="true" signature="3302:3341" placeholder="SELECT * FRO... publish_website" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/update_project_publish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51623374">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+          <folding>
+            <marker date="1458005502267" expanded="true" signature="279:324" placeholder="..." />
+            <marker date="1458005502267" expanded="true" signature="1882:1913" placeholder="SELECT * FRO... project" />
+            <marker date="1458005502267" expanded="true" signature="2013:2048" placeholder="SELECT * FRO... publication" />
+            <marker date="1458005502267" expanded="true" signature="2573:2663" placeholder="UPDATE proje... " />
+            <marker date="1458005502267" expanded="true" signature="3353:3392" placeholder="SELECT * FRO... project_publish" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/update_people_publish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29545453">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <marker date="1458005252234" expanded="true" signature="278:323" placeholder="..." />
+            <marker date="1458005252234" expanded="true" signature="1874:1904" placeholder="SELECT * FRO... people" />
+            <marker date="1458005252234" expanded="true" signature="2003:2038" placeholder="SELECT * FRO... publication" />
+            <marker date="1458005252234" expanded="true" signature="2561:2648" placeholder="UPDATE peopl... " />
+            <marker date="1458005252234" expanded="true" signature="3338:3376" placeholder="SELECT * FRO... people_publish" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/updata_people_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60714287">
+          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+          <folding>
+            <marker date="1458005224569" expanded="true" signature="282:327" placeholder="..." />
+            <marker date="1458005224569" expanded="true" signature="1898:1928" placeholder="SELECT * FRO... people" />
+            <marker date="1458005224569" expanded="true" signature="2027:2058" placeholder="SELECT * FRO... project" />
+            <marker date="1458005224569" expanded="true" signature="2589:2684" placeholder="UPDATE peopl... " />
+            <marker date="1458005224569" expanded="true" signature="3374:3412" placeholder="SELECT * FRO... people_publish" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/add_project_publish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="66" column="9" selection-start-line="63" selection-start-column="8" selection-end-line="66" selection-end-column="9" />
+          <folding>
+            <marker date="1458000946370" expanded="true" signature="477:522" placeholder="..." />
+            <marker date="1458000946370" expanded="true" signature="1807:1838" placeholder="SELECT * FRO... project" />
+            <marker date="1458000946370" expanded="true" signature="1934:1969" placeholder="SELECT * FRO... publication" />
+            <marker date="1458000946370" expanded="true" signature="2061:2127" placeholder="SELECT * FRO... project_publish" />
+            <marker date="1458000946370" expanded="true" signature="2757:2838" placeholder="INSERT INTO project_publish... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/remove_people_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1458002978014" expanded="true" signature="365:403" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/remove_people_publish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24837662">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <marker date="1457996385071" expanded="true" signature="365:403" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/remove_people.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46753246">
+          <caret line="30" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="2" />
+          <folding>
+            <marker date="1458006925240" expanded="true" signature="340:387" placeholder="SELECT * FRO... people_project" />
+            <marker date="1458006925240" expanded="true" signature="340:390" placeholder="SELECT * FRO... people_project" />
+            <marker date="1458006925240" expanded="true" signature="683:730" placeholder="SELECT * FRO... people_publish" />
+            <marker date="1458006925240" expanded="true" signature="1017:1047" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/update_news.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02881356">
+        <state vertical-scroll-proportion="0.59253246">
           <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
           <folding>
             <marker date="1457973814798" expanded="true" signature="275:320" placeholder="..." />
@@ -653,112 +792,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/php/remove_project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.1590909">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
-            <marker date="1457973814445" expanded="true" signature="287:339" placeholder="SELECT pname... project" />
-            <marker date="1457973814445" expanded="true" signature="773:928" placeholder="SELECT first... people" />
-            <marker date="1457973814445" expanded="true" signature="1685:1803" placeholder="SELECT title... news" />
-            <marker date="1457973814445" expanded="true" signature="2213:2366" placeholder="SELECT pub_n... publication" />
+            <marker date="1458007079785" expanded="true" signature="340:388" placeholder="SELECT * FRO... people_project" />
+            <marker date="1458007079785" expanded="true" signature="684:733" placeholder="SELECT * FRO... project_publish" />
+            <marker date="1458007079785" expanded="true" signature="1029:1075" placeholder="SELECT * FRO... project_news" />
+            <marker date="1458007079785" expanded="true" signature="1363:1394" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/remove_people.php">
+    <entry file="file://$PROJECT_DIR$/php/remove_website.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="13" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.36525974">
+          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
           <folding>
-            <marker date="1457973814701" expanded="true" signature="365:395" placeholder="DELETE FROM " />
+            <marker date="1458007197723" expanded="true" signature="340:385" placeholder="SELECT * FRO... publish_website" />
+            <marker date="1458007197723" expanded="true" signature="685:716" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/add_people.php">
+    <entry file="file://$PROJECT_DIR$/php/remove_news.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9881356">
-          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.22727273">
+          <caret line="14" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="2" />
           <folding>
-            <marker date="1457973814556" expanded="true" signature="485:530" placeholder="..." />
-            <marker date="1457973814556" expanded="true" signature="2269:2386" placeholder="INSERT INTO people... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/add_people_publish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030035336">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/remove_people_publish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <marker date="1457996385071" expanded="true" signature="365:403" placeholder="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/createTables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/update_people_publish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.7818182">
-          <caret line="78" column="130" selection-start-line="78" selection-start-column="130" selection-end-line="78" selection-end-column="130" />
-          <folding>
-            <marker date="1457997423759" expanded="true" signature="278:323" placeholder="..." />
-            <marker date="1457997423759" expanded="true" signature="1874:1904" placeholder="SELECT * FRO... people" />
-            <marker date="1457997423759" expanded="true" signature="2003:2038" placeholder="SELECT * FRO... publication" />
-            <marker date="1457997423759" expanded="true" signature="2134:2198" placeholder="SELECT * FRO... people_publish" />
-            <marker date="1457997423759" expanded="true" signature="2894:2981" placeholder="UPDATE peopl... " />
-            <marker date="1457997423759" expanded="true" signature="3671:3709" placeholder="SELECT * FRO... people_publish" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/update_people.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.236364">
-          <caret line="65" column="167" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="167" />
-          <folding>
-            <marker date="1457973814831" expanded="true" signature="299:344" placeholder="..." />
-            <marker date="1457973814831" expanded="true" signature="2408:2536" placeholder="UPDATE peopl... " />
-            <marker date="1457973814831" expanded="true" signature="3200:3230" placeholder="SELECT * FRO... people" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6830509">
-          <caret line="148" column="52" selection-start-line="148" selection-start-column="52" selection-end-line="148" selection-end-column="52" />
-          <folding>
-            <marker date="1457999636144" expanded="true" signature="402:422" placeholder="SELECT * FRO... people" />
-            <marker date="1457999636144" expanded="true" signature="1522:1540" placeholder="SELECT * FRO... news" />
-            <marker date="1457999636144" expanded="true" signature="2495:2516" placeholder="SELECT * FRO... website" />
-            <marker date="1457999636144" expanded="true" signature="3421:3442" placeholder="SELECT * FRO... project" />
-            <marker date="1457999636144" expanded="true" signature="4889:4902" placeholder="SELECT * FRO... " />
-            <marker date="1457999636144" expanded="true" signature="4889:4903" placeholder="SELECT * FRO... project_publish" />
+            <marker date="1458006775516" expanded="true" signature="340:383" placeholder="SELECT * FRO... project_news" />
+            <marker date="1458006775516" expanded="true" signature="348:383" placeholder="DELETE FROM " />
+            <marker date="1458006775516" expanded="true" signature="683:711" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>

@@ -124,7 +124,7 @@ echo "</table>";
 ?>
 <p><a href="php/add_project.php">Add a PROJECT record</a></p>
 
-<!-- ---------------------------- PROJECT_PUBLISH table ------------------------------->
+<!-- ---------------------------- relation tables ------------------------------->
 <?php
 $files = array("people_publish", "people_project", "project_publish", "project_news", "publish_website");
 $attr = array(
