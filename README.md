@@ -12,7 +12,7 @@ Developed using XAMPP 5.6.8:
 
 You could create(initialize) and modify the database using the SQL files in https://github.com/YilinGUO/screening/tree/part2/sql.
 
-The project tables and the user (to modify the project) table are stored in the same database "screening". 
+According to the SQL files I wrote (to initialize the project), the project tables and the table of administrators are stored in a single database "screening". 
 
-In order to sign in to add/update/remove records, you have to click the *login* button on the index page.The username is "guoyilin", and the password is "123456".
+In order to sign in to add/update/remove records, you have to click the *login* button on the index page.The username is "guoyilin", and the password is "123456". (Or you can create your own admin table in the database; the admin table is referred to as *UserName* in *check-sign-in.php*)
 
