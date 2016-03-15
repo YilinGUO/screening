@@ -44,12 +44,20 @@ if ($project->num_rows > 0) {
             }
         }
         // ---------------------------------- publication --------------------------------
-        $publication = $connection->query("SELECT pub_name, pdate, url, award FROM publication, project_publish WHERE '$id' = project_publish.project_id AND project_publish.pub_id = publication.id");
+        $publication = $connection->query("SELECT publication.id AS id, pub_name, pdate, url, award FROM publication, project_publish WHERE '$id' = project_publish.project_id AND project_publish.pub_id = publication.id");
         if ($publication->num_rows > 0) {
             echo '<div class="pub-title">Publications: </div>';
             echo '<ul>';
             while($prow = $publication->fetch_assoc()) {
-                echo '<li">'. $prow["pub_name"] . ", " .  $prow["pdate"] . '</li>';
+                echo '<li>';
+                $pubid =  $prow["id"];
+                $people = $connection->query("SELECT first_name, middle_name, last_name FROM people, people_publish WHERE'$pubid'= people_publish.pub_id AND people_publish.people_id = people.id");
+                if ($people->num_rows > 0) {
+                    while($perow = $people->fetch_assoc()) {
+                        echo $perow["first_name"] . " " . $perow["middle_name"] . " " . $perow["last_name"] . ", ";
+                    }
+                }
+                echo '<a href='. $prow["url"] .'>' . $prow["pub_name"] . "</a>, " .  $prow["pdate"] . '</li>';
             }
             echo '</ul>';
         }

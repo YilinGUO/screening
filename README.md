@@ -15,7 +15,5 @@ In order to sign in to add/update/remove records, you have to click the *login* 
 
 TODO:
 - update the download links of publications on *index.php*
-- Display relation tables on *view.php*.
-- error handling when deleting records (check dependencies)
 - add contents of projects on *index.php*
 
